@@ -368,7 +368,7 @@ def call_recommendation_api(the_prompt):
     stop = ["\n"])
     return (response)
 
-
+secret_key="sk-gXYxMBLNNMFCNG8M2bkQYuAxUP7yrXlqeB614jJa"
 openai.api_key = secret_key
 
 @socketio.on('python_old', namespace='/test')
