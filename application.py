@@ -25,7 +25,7 @@ from random import random
 from time import sleep
 from threading import Thread, Event
 from transformers import GPT2Tokenizer
-from key_config import *
+# from key_config import *
 import openai
 import os
 
