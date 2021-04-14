@@ -30,7 +30,7 @@ import openai
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = flask_secret_key
+app.config['SECRET_KEY'] = "sk-gXYxMBLNNMFCNG8M2bkQYuAxUP7yrXlqeB614jJa"
 app.config['DEBUG'] = True
 
 #turn the flask app into a socketio app
