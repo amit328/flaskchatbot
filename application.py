@@ -30,7 +30,7 @@ import openai
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "sk-gXYxMBLNNMFCNG8M2bkQYuAxUP7yrXlqeB614jJa"
+app.config['SECRET_KEY'] = YourKey
 app.config['DEBUG'] = True
 
 #turn the flask app into a socketio app
@@ -368,7 +368,7 @@ def call_recommendation_api(the_prompt):
     stop = ["\n"])
     return (response)
 
-secret_key="sk-gXYxMBLNNMFCNG8M2bkQYuAxUP7yrXlqeB614jJa"
+secret_key= YourKey
 openai.api_key = secret_key
 
 @socketio.on('python_old', namespace='/test')
